@@ -50,8 +50,8 @@
     },
     {
       "method": "PUT",
-      "path": "/profiles/:id",
-      "handler": "profile.update",
+      "path": "/profiles/me",
+      "handler": "profile.updateMe",
       "config": {
         "policies": []
       }
