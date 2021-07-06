@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 "use strict";
+=======
+'use strict';
+>>>>>>> ac26fbd481bf60e0658d79ed3c5225e568c0f9f5
 
 /**
  * An asynchronous bootstrap function that runs before
@@ -10,6 +14,7 @@
  * See more details here: https://strapi.io/documentation/developer-docs/latest/setup-deployment-guides/configurations.html#bootstrap
  */
 
+<<<<<<< HEAD
 module.exports = () => {
   // import socket io
   //   var io = require("socket.io")(strapi.server);
@@ -23,3 +28,6 @@ module.exports = () => {
   //   strapi.io = io; // register socket io inside strapi main object to use it globally anywhere
   //   cb;
 };
+=======
+module.exports = () => {};
+>>>>>>> ac26fbd481bf60e0658d79ed3c5225e568c0f9f5

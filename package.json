@@ -11,6 +11,7 @@
   },
   "devDependencies": {},
   "dependencies": {
+<<<<<<< HEAD
     "knex": "0.21.18",
     "socket.io": "^4.1.2",
     "sqlite3": "5.0.0",
@@ -24,12 +25,28 @@
     "strapi-plugin-upload": "3.6.5",
     "strapi-plugin-users-permissions": "3.6.5",
     "strapi-utils": "3.6.5"
+=======
+    "strapi": "3.6.5",
+    "strapi-admin": "3.6.5",
+    "strapi-utils": "3.6.5",
+    "strapi-plugin-content-type-builder": "3.6.5",
+    "strapi-plugin-content-manager": "3.6.5",
+    "strapi-plugin-users-permissions": "3.6.5",
+    "strapi-plugin-email": "3.6.5",
+    "strapi-plugin-upload": "3.6.5",
+    "strapi-plugin-i18n": "3.6.5",
+    "strapi-connector-mongoose": "3.6.5"
+>>>>>>> ac26fbd481bf60e0658d79ed3c5225e568c0f9f5
   },
   "author": {
     "name": "A Strapi developer"
   },
   "strapi": {
+<<<<<<< HEAD
     "uuid": "383c262b-05e8-4eb9-a68c-cf4d0234c987"
+=======
+    "uuid": "23c01267-e86b-429b-96f2-18855cff48ad"
+>>>>>>> ac26fbd481bf60e0658d79ed3c5225e568c0f9f5
   },
   "engines": {
     "node": ">=10.16.0 <=14.x.x",

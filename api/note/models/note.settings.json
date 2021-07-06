@@ -2,8 +2,12 @@
   "kind": "collectionType",
   "collectionName": "notes",
   "info": {
+<<<<<<< HEAD
     "name": "note",
     "description": ""
+=======
+    "name": "Note"
+>>>>>>> ac26fbd481bf60e0658d79ed3c5225e568c0f9f5
   },
   "options": {
     "increments": true,
