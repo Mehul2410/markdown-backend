@@ -1,4 +1,4 @@
-# ![logo](https://raw.githubusercontent.com/Mehul2410/markdown-frontend/master/public/favicon.ico) markdown-frontend
+# ![logo](https://raw.githubusercontent.com/Mehul2410/markdown-frontend/master/public/favicon.ico) markdown-backend
 ### This Application is made using Next.js as Frontend and Strapi as Backend
 ## 1. Clone the repository 
 ## 2. Development
