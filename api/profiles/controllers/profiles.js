@@ -20,16 +20,16 @@ module.exports = {
     if (ctx.is("multipart")) {
       const { data, files } = parseMultipartData(ctx);
       data["user"] = user;
-      entity = await strapi.services.profile.update({ user: user.id }, data, {
+      entity = await strapi.services.profiles.update({ user: user.id }, data, {
         files,
       });
     } else {
       const data = ctx.request.body;
       data["user"] = user;
-      entity = await strapi.services.profile.update({ user: user.id }, data);
+      entity = await strapi.services.profiles.update({ user: user.id }, data);
     }
 
-    return sanitizeEntity(entity, { model: strapi.models.profile });
+    return sanitizeEntity(entity, { model: strapi.models.profiles });
   },
 
   async findMe(ctx) {
@@ -41,9 +41,9 @@ module.exports = {
         { messages: [{ id: "No authorized header was found" }] },
       ]);
     }
-    entities = await strapi.query("profile").find({ user: user.id });
+    entities = await strapi.query("profiles").find({ user: user.id });
     return entities.map((entity) =>
-      sanitizeEntity(entity, { model: strapi.models.profile })
+      sanitizeEntity(entity, { model: strapi.models.profiles })
     );
   },
   async createMe(ctx) {
@@ -58,12 +58,12 @@ module.exports = {
     if (ctx.is("multipart")) {
       const { data, files } = parseMultipartData(ctx);
       data["user"] = user;
-      entity = await strapi.services.profile.create(data, { files });
+      entity = await strapi.services.profiles.create(data, { files });
     } else {
       const data = ctx.request.body;
       data["user"] = user;
-      entity = await strapi.services.profile.create(data);
+      entity = await strapi.services.profiles.create(data);
     }
-    return sanitizeEntity(entity, { model: strapi.models.profile });
+    return sanitizeEntity(entity, { model: strapi.models.profiles });
   },
 };
